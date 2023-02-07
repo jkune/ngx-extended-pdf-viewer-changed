@@ -1,62 +1,19 @@
-import { Component, ElementRef, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import * as i0 from "@angular/core";
-import * as i1 from "@angular/common";
-import * as i2 from "../pdf-toggle-sidebar/pdf-toggle-sidebar.component";
-import * as i3 from "../pdf-find-button/pdf-find-button.component";
-import * as i4 from "../pdf-paging-area/pdf-paging-area.component";
-import * as i5 from "../pdf-zoom-toolbar/pdf-zoom-toolbar.component";
-import * as i6 from "../pdf-hand-tool/pdf-hand-tool.component";
-import * as i7 from "../pdf-select-tool/pdf-select-tool.component";
-import * as i8 from "../pdf-rotate-page/pdf-rotate-page.component";
-import * as i9 from "../pdf-presentation-mode/pdf-presentation-mode.component";
-import * as i10 from "../pdf-open-file/pdf-open-file.component";
-import * as i11 from "../pdf-print/pdf-print.component";
-import * as i12 from "../pdf-download/pdf-download.component";
-import * as i13 from "../pdf-editor/pdf-editor.component";
-import * as i14 from "../pdf-toggle-secondary-toolbar/pdf-toggle-secondary-toolbar.component";
-function PdfToolbarComponent_ng_content_2_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵprojection(0, 0, ["*ngTemplateOutlet", "customToolbar ? customToolbar : defaultToolbar"]);
-} }
-function PdfToolbarComponent_ng_template_6_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵelementStart(0, "div", 7)(1, "div", 8);
-    i0.ɵɵelement(2, "pdf-toggle-sidebar", 9)(3, "pdf-find-button", 10)(4, "pdf-paging-area", 11);
-    i0.ɵɵelementEnd();
-    i0.ɵɵelement(5, "pdf-zoom-toolbar", 12);
-    i0.ɵɵelementStart(6, "div", 13);
-    i0.ɵɵelement(7, "pdf-hand-tool", 14)(8, "pdf-select-tool", 15)(9, "pdf-rotate-page", 16)(10, "pdf-rotate-page", 16)(11, "pdf-presentation-mode", 17)(12, "pdf-open-file", 18)(13, "pdf-print", 19)(14, "pdf-download", 20)(15, "pdf-editor", 21)(16, "pdf-toggle-secondary-toolbar", 22);
-    i0.ɵɵelementEnd()();
-} if (rf & 2) {
-    const ctx_r2 = i0.ɵɵnextContext();
-    i0.ɵɵadvance(2);
-    i0.ɵɵproperty("showSidebarButton", ctx_r2.showSidebarButton);
-    i0.ɵɵadvance(1);
-    i0.ɵɵproperty("showFindButton", ctx_r2.showFindButton)("textLayer", ctx_r2.textLayer);
-    i0.ɵɵadvance(1);
-    i0.ɵɵproperty("showPagingButtons", ctx_r2.showPagingButtons);
-    i0.ɵɵadvance(1);
-    i0.ɵɵproperty("showZoomButtons", ctx_r2.showZoomButtons)("zoomLevels", ctx_r2.zoomLevels);
-    i0.ɵɵadvance(2);
-    i0.ɵɵproperty("showHandToolButton", ctx_r2.showHandToolButton);
-    i0.ɵɵadvance(1);
-    i0.ɵɵproperty("showSelectToolButton", ctx_r2.showHandToolButton);
-    i0.ɵɵadvance(1);
-    i0.ɵɵproperty("showRotateButton", ctx_r2.showRotateButton)("clockwise", true)("counterClockwise", false);
-    i0.ɵɵadvance(1);
-    i0.ɵɵproperty("showRotateButton", ctx_r2.showRotateButton)("clockwise", false)("counterClockwise", true);
-    i0.ɵɵadvance(1);
-    i0.ɵɵproperty("showPresentationModeButton", ctx_r2.showPresentationModeButton);
-    i0.ɵɵadvance(1);
-    i0.ɵɵproperty("showOpenFileButton", ctx_r2.showOpenFileButton);
-    i0.ɵɵadvance(1);
-    i0.ɵɵproperty("showPrintButton", ctx_r2.showPrintButton);
-    i0.ɵɵadvance(1);
-    i0.ɵɵproperty("showDownloadButton", ctx_r2.showDownloadButton);
-    i0.ɵɵadvance(1);
-    i0.ɵɵproperty("showEditor", ctx_r2.showEditor);
-    i0.ɵɵadvance(1);
-    i0.ɵɵproperty("showSecondaryToolbarButton", ctx_r2.showSecondaryToolbarButton);
-} }
-const _c0 = ["*"];
+import * as i1 from "../pdf-toggle-sidebar/pdf-toggle-sidebar.component";
+import * as i2 from "../pdf-find-button/pdf-find-button.component";
+import * as i3 from "../pdf-paging-area/pdf-paging-area.component";
+import * as i4 from "../pdf-zoom-toolbar/pdf-zoom-toolbar.component";
+import * as i5 from "../pdf-hand-tool/pdf-hand-tool.component";
+import * as i6 from "../pdf-select-tool/pdf-select-tool.component";
+import * as i7 from "../pdf-rotate-page/pdf-rotate-page.component";
+import * as i8 from "../pdf-presentation-mode/pdf-presentation-mode.component";
+import * as i9 from "../pdf-open-file/pdf-open-file.component";
+import * as i10 from "../pdf-print/pdf-print.component";
+import * as i11 from "../pdf-download/pdf-download.component";
+import * as i12 from "../pdf-editor/pdf-editor.component";
+import * as i13 from "../pdf-toggle-secondary-toolbar/pdf-toggle-secondary-toolbar.component";
+import * as i14 from "@angular/common";
 export class PdfToolbarComponent {
     constructor(elementRef) {
         this.elementRef = elementRef;
@@ -85,66 +42,52 @@ export class PdfToolbarComponent {
         this.onToolbarLoaded.emit(this.elementRef.nativeElement.getElementsByClassName('toolbar')[0]);
     }
 }
-/** @nocollapse */ PdfToolbarComponent.ɵfac = function PdfToolbarComponent_Factory(t) { return new (t || PdfToolbarComponent)(i0.ɵɵdirectiveInject(i0.ElementRef)); };
-/** @nocollapse */ PdfToolbarComponent.ɵcmp = /** @pureOrBreakMyCode */ i0.ɵɵdefineComponent({ type: PdfToolbarComponent, selectors: [["pdf-toolbar"]], inputs: { customToolbar: "customToolbar", mobileFriendlyZoomScale: "mobileFriendlyZoomScale", primaryMenuVisible: "primaryMenuVisible", showBookmarkButton: "showBookmarkButton", showDownloadButton: "showDownloadButton", showEditor: "showEditor", showFindButton: "showFindButton", showHandToolButton: "showHandToolButton", showOpenFileButton: "showOpenFileButton", showPrintButton: "showPrintButton", showPagingButtons: "showPagingButtons", showPresentationModeButton: "showPresentationModeButton", showRotateButton: "showRotateButton", showSecondaryToolbarButton: "showSecondaryToolbarButton", showSidebarButton: "showSidebarButton", showZoomButtons: "showZoomButtons", textLayer: "textLayer", toolbarMarginTop: "toolbarMarginTop", toolbarWidth: "toolbarWidth", zoomLevels: "zoomLevels" }, outputs: { onToolbarLoaded: "onToolbarLoaded" }, ngContentSelectors: _c0, decls: 8, vars: 11, consts: [[1, "toolbar"], ["id", "toolbarContainer"], [4, "ngTemplateOutlet"], ["id", "loadingBar"], [1, "progress"], [1, "glimmer"], ["defaultToolbar", ""], ["id", "toolbarViewer"], ["id", "toolbarViewerLeft"], [3, "showSidebarButton"], [3, "showFindButton", "textLayer"], [3, "showPagingButtons"], [3, "showZoomButtons", "zoomLevels"], ["id", "toolbarViewerRight"], [3, "showHandToolButton"], [3, "showSelectToolButton"], [3, "showRotateButton", "clockwise", "counterClockwise"], [3, "showPresentationModeButton"], [3, "showOpenFileButton"], [3, "showPrintButton"], [3, "showDownloadButton"], [3, "showEditor"], [3, "showSecondaryToolbarButton"]], template: function PdfToolbarComponent_Template(rf, ctx) { if (rf & 1) {
-        i0.ɵɵprojectionDef();
-        i0.ɵɵelementStart(0, "div", 0)(1, "div", 1);
-        i0.ɵɵtemplate(2, PdfToolbarComponent_ng_content_2_Template, 1, 0, "ng-content", 2);
-        i0.ɵɵelementStart(3, "div", 3)(4, "div", 4);
-        i0.ɵɵelement(5, "div", 5);
-        i0.ɵɵelementEnd()()()();
-        i0.ɵɵtemplate(6, PdfToolbarComponent_ng_template_6_Template, 17, 20, "ng-template", null, 6, i0.ɵɵtemplateRefExtractor);
-    } if (rf & 2) {
-        const _r1 = i0.ɵɵreference(7);
-        i0.ɵɵstyleProp("transform", "scale(" + ctx.mobileFriendlyZoomScale + ")")("transform-origin", "left center")("width", ctx.toolbarWidth)("margin-top", ctx.toolbarMarginTop);
-        i0.ɵɵclassProp("invisible", !ctx.primaryMenuVisible);
-        i0.ɵɵadvance(2);
-        i0.ɵɵproperty("ngTemplateOutlet", ctx.customToolbar ? ctx.customToolbar : _r1);
-    } }, directives: [i1.NgTemplateOutlet, i2.PdfToggleSidebarComponent, i3.PdfFindButtonComponent, i4.PdfPagingAreaComponent, i5.PdfZoomToolbarComponent, i6.PdfHandToolComponent, i7.PdfSelectToolComponent, i8.PdfRotatePageComponent, i9.PdfPresentationModeComponent, i10.PdfOpenFileComponent, i11.PdfPrintComponent, i12.PdfDownloadComponent, i13.PdfEditorComponent, i14.PdfToggleSecondaryToolbarComponent], styles: [""] });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(PdfToolbarComponent, [{
-        type: Component,
-        args: [{ selector: 'pdf-toolbar', template: "<div class=\"toolbar\" [class.invisible]=\"!primaryMenuVisible\"\r\n  [style.transform]=\"'scale(' + mobileFriendlyZoomScale + ')'\" [style.transformOrigin]=\"'left center'\"\r\n  [style.width]=\"toolbarWidth\" [style.marginTop]=\"toolbarMarginTop\">\r\n  <div id=\"toolbarContainer\">\r\n    <ng-content *ngTemplateOutlet=\"customToolbar ? customToolbar : defaultToolbar\"></ng-content>\r\n    <div id=\"loadingBar\">\r\n      <div class=\"progress\">\r\n        <div class=\"glimmer\"></div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<ng-template #defaultToolbar>\r\n  <div id=\"toolbarViewer\">\r\n    <div id=\"toolbarViewerLeft\">\r\n      <pdf-toggle-sidebar [showSidebarButton]=\"showSidebarButton\"></pdf-toggle-sidebar>\r\n      <pdf-find-button [showFindButton]=\"showFindButton\" [textLayer]=\"textLayer\"></pdf-find-button>\r\n      <pdf-paging-area [showPagingButtons]=\"showPagingButtons\"></pdf-paging-area>\r\n    </div>\r\n    <pdf-zoom-toolbar [showZoomButtons]=\"showZoomButtons\" [zoomLevels]=\"zoomLevels\"></pdf-zoom-toolbar>\r\n    <div id=\"toolbarViewerRight\">\r\n\r\n\r\n      <pdf-hand-tool [showHandToolButton]=\"showHandToolButton\"></pdf-hand-tool>\r\n      <pdf-select-tool [showSelectToolButton]=\"showHandToolButton\"></pdf-select-tool>\r\n      <pdf-rotate-page [showRotateButton]=\"showRotateButton\" [clockwise]=\"true\" [counterClockwise]=\"false\">\r\n      </pdf-rotate-page>\r\n      <pdf-rotate-page [showRotateButton]=\"showRotateButton\" [clockwise]=\"false\" [counterClockwise]=\"true\">\r\n      </pdf-rotate-page>\r\n      <pdf-presentation-mode [showPresentationModeButton]=\"showPresentationModeButton\"></pdf-presentation-mode>\r\n      <pdf-open-file [showOpenFileButton]=\"showOpenFileButton\"></pdf-open-file>\r\n      <pdf-print [showPrintButton]=\"showPrintButton\"></pdf-print>\r\n      <pdf-download [showDownloadButton]=\"showDownloadButton\"></pdf-download>\r\n\r\n      <pdf-editor [showEditor]=\"showEditor\"></pdf-editor>\r\n      <pdf-toggle-secondary-toolbar [showSecondaryToolbarButton]=\"showSecondaryToolbarButton\">\r\n      </pdf-toggle-secondary-toolbar>\r\n\r\n    </div>\r\n  </div>\r\n</ng-template>\r\n", styles: [""] }]
-    }], function () { return [{ type: i0.ElementRef }]; }, { customToolbar: [{
-            type: Input
-        }], mobileFriendlyZoomScale: [{
-            type: Input
-        }], primaryMenuVisible: [{
-            type: Input
-        }], showBookmarkButton: [{
-            type: Input
-        }], showDownloadButton: [{
-            type: Input
-        }], showEditor: [{
-            type: Input
-        }], showFindButton: [{
-            type: Input
-        }], showHandToolButton: [{
-            type: Input
-        }], showOpenFileButton: [{
-            type: Input
-        }], showPrintButton: [{
-            type: Input
-        }], showPagingButtons: [{
-            type: Input
-        }], showPresentationModeButton: [{
-            type: Input
-        }], showRotateButton: [{
-            type: Input
-        }], showSecondaryToolbarButton: [{
-            type: Input
-        }], showSidebarButton: [{
-            type: Input
-        }], showZoomButtons: [{
-            type: Input
-        }], textLayer: [{
-            type: Input
-        }], toolbarMarginTop: [{
-            type: Input
-        }], toolbarWidth: [{
-            type: Input
-        }], zoomLevels: [{
-            type: Input
-        }], onToolbarLoaded: [{
-            type: Output
-        }] }); })();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGRmLXRvb2xiYXIuY29tcG9uZW50LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvbmd4LWV4dGVuZGVkLXBkZi12aWV3ZXIvc3JjL2xpYi90b29sYmFyL3BkZi10b29sYmFyL3BkZi10b29sYmFyLmNvbXBvbmVudC50cyIsIi4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL25neC1leHRlbmRlZC1wZGYtdmlld2VyL3NyYy9saWIvdG9vbGJhci9wZGYtdG9vbGJhci9wZGYtdG9vbGJhci5jb21wb25lbnQuaHRtbCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQWlCLFNBQVMsRUFBRSxVQUFVLEVBQUUsWUFBWSxFQUFFLEtBQUssRUFBRSxNQUFNLEVBQWUsTUFBTSxlQUFlLENBQUM7Ozs7Ozs7Ozs7Ozs7Ozs7O0lDSTNHLDhGQUE0Rjs7O0lBVTlGLDhCQUF3QixhQUFBO0lBRXBCLHdDQUFpRiwwQkFBQSwwQkFBQTtJQUduRixpQkFBTTtJQUNOLHVDQUFtRztJQUNuRywrQkFBNkI7SUFHM0Isb0NBQXlFLDBCQUFBLDBCQUFBLDJCQUFBLGlDQUFBLHlCQUFBLHFCQUFBLHdCQUFBLHNCQUFBLHdDQUFBO0lBZTNFLGlCQUFNLEVBQUE7OztJQXZCZ0IsZUFBdUM7SUFBdkMsNERBQXVDO0lBQzFDLGVBQWlDO0lBQWpDLHNEQUFpQywrQkFBQTtJQUNqQyxlQUF1QztJQUF2Qyw0REFBdUM7SUFFeEMsZUFBbUM7SUFBbkMsd0RBQW1DLGlDQUFBO0lBSXBDLGVBQXlDO0lBQXpDLDhEQUF5QztJQUN2QyxlQUEyQztJQUEzQyxnRUFBMkM7SUFDM0MsZUFBcUM7SUFBckMsMERBQXFDLG1CQUFBLDJCQUFBO0lBRXJDLGVBQXFDO0lBQXJDLDBEQUFxQyxvQkFBQSwwQkFBQTtJQUUvQixlQUF5RDtJQUF6RCw4RUFBeUQ7SUFDakUsZUFBeUM7SUFBekMsOERBQXlDO0lBQzdDLGVBQW1DO0lBQW5DLHdEQUFtQztJQUNoQyxlQUF5QztJQUF6Qyw4REFBeUM7SUFFM0MsZUFBeUI7SUFBekIsOENBQXlCO0lBQ1AsZUFBeUQ7SUFBekQsOEVBQXlEOzs7QUQ3QjdGLE1BQU0sT0FBTyxtQkFBbUI7SUFnRTlCLFlBQW9CLFVBQXNCO1FBQXRCLGVBQVUsR0FBVixVQUFVLENBQVk7UUEzRG5DLDRCQUF1QixHQUFHLENBQUMsQ0FBQztRQUc1Qix1QkFBa0IsR0FBRyxJQUFJLENBQUM7UUFHMUIsdUJBQWtCLEdBQUcsSUFBSSxDQUFDO1FBRzFCLHVCQUFrQixHQUFHLElBQUksQ0FBQztRQUcxQixlQUFVLEdBQUcsS0FBSyxDQUFDO1FBR25CLG1CQUFjLEdBQXdCLFNBQVMsQ0FBQztRQUdoRCx1QkFBa0IsR0FBRyxJQUFJLENBQUM7UUFHMUIsdUJBQWtCLEdBQUcsSUFBSSxDQUFDO1FBRzFCLG9CQUFlLEdBQUcsSUFBSSxDQUFDO1FBR3ZCLHNCQUFpQixHQUFHLElBQUksQ0FBQztRQUd6QiwrQkFBMEIsR0FBRyxLQUFLLENBQUM7UUFHbkMscUJBQWdCLEdBQUcsSUFBSSxDQUFDO1FBR3hCLCtCQUEwQixHQUFHLElBQUksQ0FBQztRQUdsQyxzQkFBaUIsR0FBRyxJQUFJLENBQUM7UUFHekIsb0JBQWUsR0FBRyxJQUFJLENBQUM7UUFHdkIsY0FBUyxHQUF3QixTQUFTLENBQUM7UUFHM0MscUJBQWdCLEdBQUcsS0FBSyxDQUFDO1FBR3pCLGlCQUFZLEdBQUcsTUFBTSxDQUFDO1FBR3RCLGVBQVUsR0FBRyxDQUFDLE1BQU0sRUFBRSxhQUFhLEVBQUUsVUFBVSxFQUFFLFlBQVksRUFBRSxHQUFHLEVBQUUsSUFBSSxFQUFFLENBQUMsRUFBRSxJQUFJLEVBQUUsR0FBRyxFQUFFLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxDQUFDLENBQUM7UUFHakcsb0JBQWUsR0FBRyxJQUFJLFlBQVksRUFBZSxDQUFDO0lBRVosQ0FBQztJQUM5QyxlQUFlO1FBQ2IsSUFBSSxDQUFDLGVBQWUsQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLFVBQVUsQ0FBQyxhQUFhLENBQUMsc0JBQXNCLENBQUMsU0FBUyxDQUFDLENBQUMsQ0FBQyxDQUFnQixDQUFDLENBQUM7SUFDL0csQ0FBQzs7eUdBbkVVLG1CQUFtQjtxR0FBbkIsbUJBQW1COztRQ1BoQyw4QkFFb0UsYUFBQTtRQUVoRSxrRkFBNEY7UUFDNUYsOEJBQXFCLGFBQUE7UUFFakIseUJBQTJCO1FBQzdCLGlCQUFNLEVBQUEsRUFBQSxFQUFBO1FBS1osdUhBNEJjOzs7UUF4Q1oseUVBQTRELG1DQUFBLDJCQUFBLG9DQUFBO1FBRHpDLG9EQUF1QztRQUkzQyxlQUFnRTtRQUFoRSw4RUFBZ0U7O3VGREdwRSxtQkFBbUI7Y0FML0IsU0FBUzsyQkFDRSxhQUFhOzZEQU1oQixhQUFhO2tCQURuQixLQUFLO1lBSUMsdUJBQXVCO2tCQUQ3QixLQUFLO1lBSUMsa0JBQWtCO2tCQUR4QixLQUFLO1lBSUMsa0JBQWtCO2tCQUR4QixLQUFLO1lBSUMsa0JBQWtCO2tCQUR4QixLQUFLO1lBSUMsVUFBVTtrQkFEaEIsS0FBSztZQUlDLGNBQWM7a0JBRHBCLEtBQUs7WUFJQyxrQkFBa0I7a0JBRHhCLEtBQUs7WUFJQyxrQkFBa0I7a0JBRHhCLEtBQUs7WUFJQyxlQUFlO2tCQURyQixLQUFLO1lBSUMsaUJBQWlCO2tCQUR2QixLQUFLO1lBSUMsMEJBQTBCO2tCQURoQyxLQUFLO1lBSUMsZ0JBQWdCO2tCQUR0QixLQUFLO1lBSUMsMEJBQTBCO2tCQURoQyxLQUFLO1lBSUMsaUJBQWlCO2tCQUR2QixLQUFLO1lBSUMsZUFBZTtrQkFEckIsS0FBSztZQUlDLFNBQVM7a0JBRGYsS0FBSztZQUlDLGdCQUFnQjtrQkFEdEIsS0FBSztZQUlDLFlBQVk7a0JBRGxCLEtBQUs7WUFJQyxVQUFVO2tCQURoQixLQUFLO1lBSUMsZUFBZTtrQkFEckIsTUFBTSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEFmdGVyVmlld0luaXQsIENvbXBvbmVudCwgRWxlbWVudFJlZiwgRXZlbnRFbWl0dGVyLCBJbnB1dCwgT3V0cHV0LCBUZW1wbGF0ZVJlZiB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xyXG5cclxuQENvbXBvbmVudCh7XHJcbiAgc2VsZWN0b3I6ICdwZGYtdG9vbGJhcicsXHJcbiAgdGVtcGxhdGVVcmw6ICcuL3BkZi10b29sYmFyLmNvbXBvbmVudC5odG1sJyxcclxuICBzdHlsZVVybHM6IFsnLi9wZGYtdG9vbGJhci5jb21wb25lbnQuY3NzJ10sXHJcbn0pXHJcbmV4cG9ydCBjbGFzcyBQZGZUb29sYmFyQ29tcG9uZW50IGltcGxlbWVudHMgQWZ0ZXJWaWV3SW5pdCB7XHJcbiAgQElucHV0KClcclxuICBwdWJsaWMgY3VzdG9tVG9vbGJhcjogVGVtcGxhdGVSZWY8YW55PiB8IHVuZGVmaW5lZDtcclxuXHJcbiAgQElucHV0KClcclxuICBwdWJsaWMgbW9iaWxlRnJpZW5kbHlab29tU2NhbGUgPSAxO1xyXG5cclxuICBASW5wdXQoKVxyXG4gIHB1YmxpYyBwcmltYXJ5TWVudVZpc2libGUgPSB0cnVlO1xyXG5cclxuICBASW5wdXQoKVxyXG4gIHB1YmxpYyBzaG93Qm9va21hcmtCdXR0b24gPSB0cnVlO1xyXG5cclxuICBASW5wdXQoKVxyXG4gIHB1YmxpYyBzaG93RG93bmxvYWRCdXR0b24gPSB0cnVlO1xyXG5cclxuICBASW5wdXQoKVxyXG4gIHB1YmxpYyBzaG93RWRpdG9yID0gZmFsc2U7XHJcblxyXG4gIEBJbnB1dCgpXHJcbiAgcHVibGljIHNob3dGaW5kQnV0dG9uOiBib29sZWFuIHwgdW5kZWZpbmVkID0gdW5kZWZpbmVkO1xyXG5cclxuICBASW5wdXQoKVxyXG4gIHB1YmxpYyBzaG93SGFuZFRvb2xCdXR0b24gPSB0cnVlO1xyXG5cclxuICBASW5wdXQoKVxyXG4gIHB1YmxpYyBzaG93T3BlbkZpbGVCdXR0b24gPSB0cnVlO1xyXG5cclxuICBASW5wdXQoKVxyXG4gIHB1YmxpYyBzaG93UHJpbnRCdXR0b24gPSB0cnVlO1xyXG5cclxuICBASW5wdXQoKVxyXG4gIHB1YmxpYyBzaG93UGFnaW5nQnV0dG9ucyA9IHRydWU7XHJcblxyXG4gIEBJbnB1dCgpXHJcbiAgcHVibGljIHNob3dQcmVzZW50YXRpb25Nb2RlQnV0dG9uID0gZmFsc2U7XHJcblxyXG4gIEBJbnB1dCgpXHJcbiAgcHVibGljIHNob3dSb3RhdGVCdXR0b24gPSB0cnVlO1xyXG5cclxuICBASW5wdXQoKVxyXG4gIHB1YmxpYyBzaG93U2Vjb25kYXJ5VG9vbGJhckJ1dHRvbiA9IHRydWU7XHJcblxyXG4gIEBJbnB1dCgpXHJcbiAgcHVibGljIHNob3dTaWRlYmFyQnV0dG9uID0gdHJ1ZTtcclxuXHJcbiAgQElucHV0KClcclxuICBwdWJsaWMgc2hvd1pvb21CdXR0b25zID0gdHJ1ZTtcclxuXHJcbiAgQElucHV0KClcclxuICBwdWJsaWMgdGV4dExheWVyOiBib29sZWFuIHwgdW5kZWZpbmVkID0gdW5kZWZpbmVkO1xyXG5cclxuICBASW5wdXQoKVxyXG4gIHB1YmxpYyB0b29sYmFyTWFyZ2luVG9wID0gJzBweCc7XHJcblxyXG4gIEBJbnB1dCgpXHJcbiAgcHVibGljIHRvb2xiYXJXaWR0aCA9ICcxMDAlJztcclxuXHJcbiAgQElucHV0KClcclxuICBwdWJsaWMgem9vbUxldmVscyA9IFsnYXV0bycsICdwYWdlLWFjdHVhbCcsICdwYWdlLWZpdCcsICdwYWdlLXdpZHRoJywgMC41LCAwLjc1LCAxLCAxLjI1LCAxLjUsIDIsIDMsIDRdO1xyXG5cclxuICBAT3V0cHV0KClcclxuICBwdWJsaWMgb25Ub29sYmFyTG9hZGVkID0gbmV3IEV2ZW50RW1pdHRlcjxIVE1MRWxlbWVudD4oKTtcclxuXHJcbiAgY29uc3RydWN0b3IocHJpdmF0ZSBlbGVtZW50UmVmOiBFbGVtZW50UmVmKSB7fVxyXG4gIG5nQWZ0ZXJWaWV3SW5pdCgpOiB2b2lkIHtcclxuICAgIHRoaXMub25Ub29sYmFyTG9hZGVkLmVtaXQodGhpcy5lbGVtZW50UmVmLm5hdGl2ZUVsZW1lbnQuZ2V0RWxlbWVudHNCeUNsYXNzTmFtZSgndG9vbGJhcicpWzBdIGFzIEhUTUxFbGVtZW50KTtcclxuICB9XHJcbn1cclxuIiwiPGRpdiBjbGFzcz1cInRvb2xiYXJcIiBbY2xhc3MuaW52aXNpYmxlXT1cIiFwcmltYXJ5TWVudVZpc2libGVcIlxyXG4gIFtzdHlsZS50cmFuc2Zvcm1dPVwiJ3NjYWxlKCcgKyBtb2JpbGVGcmllbmRseVpvb21TY2FsZSArICcpJ1wiIFtzdHlsZS50cmFuc2Zvcm1PcmlnaW5dPVwiJ2xlZnQgY2VudGVyJ1wiXHJcbiAgW3N0eWxlLndpZHRoXT1cInRvb2xiYXJXaWR0aFwiIFtzdHlsZS5tYXJnaW5Ub3BdPVwidG9vbGJhck1hcmdpblRvcFwiPlxyXG4gIDxkaXYgaWQ9XCJ0b29sYmFyQ29udGFpbmVyXCI+XHJcbiAgICA8bmctY29udGVudCAqbmdUZW1wbGF0ZU91dGxldD1cImN1c3RvbVRvb2xiYXIgPyBjdXN0b21Ub29sYmFyIDogZGVmYXVsdFRvb2xiYXJcIj48L25nLWNvbnRlbnQ+XHJcbiAgICA8ZGl2IGlkPVwibG9hZGluZ0JhclwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwicHJvZ3Jlc3NcIj5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiZ2xpbW1lclwiPjwvZGl2PlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvZGl2PlxyXG48L2Rpdj5cclxuXHJcbjxuZy10ZW1wbGF0ZSAjZGVmYXVsdFRvb2xiYXI+XHJcbiAgPGRpdiBpZD1cInRvb2xiYXJWaWV3ZXJcIj5cclxuICAgIDxkaXYgaWQ9XCJ0b29sYmFyVmlld2VyTGVmdFwiPlxyXG4gICAgICA8cGRmLXRvZ2dsZS1zaWRlYmFyIFtzaG93U2lkZWJhckJ1dHRvbl09XCJzaG93U2lkZWJhckJ1dHRvblwiPjwvcGRmLXRvZ2dsZS1zaWRlYmFyPlxyXG4gICAgICA8cGRmLWZpbmQtYnV0dG9uIFtzaG93RmluZEJ1dHRvbl09XCJzaG93RmluZEJ1dHRvblwiIFt0ZXh0TGF5ZXJdPVwidGV4dExheWVyXCI+PC9wZGYtZmluZC1idXR0b24+XHJcbiAgICAgIDxwZGYtcGFnaW5nLWFyZWEgW3Nob3dQYWdpbmdCdXR0b25zXT1cInNob3dQYWdpbmdCdXR0b25zXCI+PC9wZGYtcGFnaW5nLWFyZWE+XHJcbiAgICA8L2Rpdj5cclxuICAgIDxwZGYtem9vbS10b29sYmFyIFtzaG93Wm9vbUJ1dHRvbnNdPVwic2hvd1pvb21CdXR0b25zXCIgW3pvb21MZXZlbHNdPVwiem9vbUxldmVsc1wiPjwvcGRmLXpvb20tdG9vbGJhcj5cclxuICAgIDxkaXYgaWQ9XCJ0b29sYmFyVmlld2VyUmlnaHRcIj5cclxuXHJcblxyXG4gICAgICA8cGRmLWhhbmQtdG9vbCBbc2hvd0hhbmRUb29sQnV0dG9uXT1cInNob3dIYW5kVG9vbEJ1dHRvblwiPjwvcGRmLWhhbmQtdG9vbD5cclxuICAgICAgPHBkZi1zZWxlY3QtdG9vbCBbc2hvd1NlbGVjdFRvb2xCdXR0b25dPVwic2hvd0hhbmRUb29sQnV0dG9uXCI+PC9wZGYtc2VsZWN0LXRvb2w+XHJcbiAgICAgIDxwZGYtcm90YXRlLXBhZ2UgW3Nob3dSb3RhdGVCdXR0b25dPVwic2hvd1JvdGF0ZUJ1dHRvblwiIFtjbG9ja3dpc2VdPVwidHJ1ZVwiIFtjb3VudGVyQ2xvY2t3aXNlXT1cImZhbHNlXCI+XHJcbiAgICAgIDwvcGRmLXJvdGF0ZS1wYWdlPlxyXG4gICAgICA8cGRmLXJvdGF0ZS1wYWdlIFtzaG93Um90YXRlQnV0dG9uXT1cInNob3dSb3RhdGVCdXR0b25cIiBbY2xvY2t3aXNlXT1cImZhbHNlXCIgW2NvdW50ZXJDbG9ja3dpc2VdPVwidHJ1ZVwiPlxyXG4gICAgICA8L3BkZi1yb3RhdGUtcGFnZT5cclxuICAgICAgPHBkZi1wcmVzZW50YXRpb24tbW9kZSBbc2hvd1ByZXNlbnRhdGlvbk1vZGVCdXR0b25dPVwic2hvd1ByZXNlbnRhdGlvbk1vZGVCdXR0b25cIj48L3BkZi1wcmVzZW50YXRpb24tbW9kZT5cclxuICAgICAgPHBkZi1vcGVuLWZpbGUgW3Nob3dPcGVuRmlsZUJ1dHRvbl09XCJzaG93T3BlbkZpbGVCdXR0b25cIj48L3BkZi1vcGVuLWZpbGU+XHJcbiAgICAgIDxwZGYtcHJpbnQgW3Nob3dQcmludEJ1dHRvbl09XCJzaG93UHJpbnRCdXR0b25cIj48L3BkZi1wcmludD5cclxuICAgICAgPHBkZi1kb3dubG9hZCBbc2hvd0Rvd25sb2FkQnV0dG9uXT1cInNob3dEb3dubG9hZEJ1dHRvblwiPjwvcGRmLWRvd25sb2FkPlxyXG5cclxuICAgICAgPHBkZi1lZGl0b3IgW3Nob3dFZGl0b3JdPVwic2hvd0VkaXRvclwiPjwvcGRmLWVkaXRvcj5cclxuICAgICAgPHBkZi10b2dnbGUtc2Vjb25kYXJ5LXRvb2xiYXIgW3Nob3dTZWNvbmRhcnlUb29sYmFyQnV0dG9uXT1cInNob3dTZWNvbmRhcnlUb29sYmFyQnV0dG9uXCI+XHJcbiAgICAgIDwvcGRmLXRvZ2dsZS1zZWNvbmRhcnktdG9vbGJhcj5cclxuXHJcbiAgICA8L2Rpdj5cclxuICA8L2Rpdj5cclxuPC9uZy10ZW1wbGF0ZT5cclxuIl19
+PdfToolbarComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.12", ngImport: i0, type: PdfToolbarComponent, deps: [{ token: i0.ElementRef }], target: i0.ɵɵFactoryTarget.Component });
+PdfToolbarComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.12", type: PdfToolbarComponent, selector: "pdf-toolbar", inputs: { customToolbar: "customToolbar", mobileFriendlyZoomScale: "mobileFriendlyZoomScale", primaryMenuVisible: "primaryMenuVisible", showBookmarkButton: "showBookmarkButton", showDownloadButton: "showDownloadButton", showEditor: "showEditor", showFindButton: "showFindButton", showHandToolButton: "showHandToolButton", showOpenFileButton: "showOpenFileButton", showPrintButton: "showPrintButton", showPagingButtons: "showPagingButtons", showPresentationModeButton: "showPresentationModeButton", showRotateButton: "showRotateButton", showSecondaryToolbarButton: "showSecondaryToolbarButton", showSidebarButton: "showSidebarButton", showZoomButtons: "showZoomButtons", textLayer: "textLayer", toolbarMarginTop: "toolbarMarginTop", toolbarWidth: "toolbarWidth", zoomLevels: "zoomLevels" }, outputs: { onToolbarLoaded: "onToolbarLoaded" }, ngImport: i0, template: "<div class=\"toolbar\" [class.invisible]=\"!primaryMenuVisible\"\r\n  [style.transform]=\"'scale(' + mobileFriendlyZoomScale + ')'\" [style.transformOrigin]=\"'left center'\"\r\n  [style.width]=\"toolbarWidth\" [style.marginTop]=\"toolbarMarginTop\">\r\n  <div id=\"toolbarContainer\">\r\n    <ng-content *ngTemplateOutlet=\"customToolbar ? customToolbar : defaultToolbar\"></ng-content>\r\n    <div id=\"loadingBar\">\r\n      <div class=\"progress\">\r\n        <div class=\"glimmer\"></div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<ng-template #defaultToolbar>\r\n  <div id=\"toolbarViewer\">\r\n    <div id=\"toolbarViewerLeft\">\r\n      <pdf-toggle-sidebar [showSidebarButton]=\"showSidebarButton\"></pdf-toggle-sidebar>\r\n      <pdf-find-button [showFindButton]=\"showFindButton\" [textLayer]=\"textLayer\"></pdf-find-button>\r\n      <pdf-paging-area [showPagingButtons]=\"showPagingButtons\"></pdf-paging-area>\r\n    </div>\r\n    <pdf-zoom-toolbar [showZoomButtons]=\"showZoomButtons\" [zoomLevels]=\"zoomLevels\"></pdf-zoom-toolbar>\r\n    <div id=\"toolbarViewerRight\">\r\n\r\n\r\n      <pdf-hand-tool [showHandToolButton]=\"showHandToolButton\"></pdf-hand-tool>\r\n      <pdf-select-tool [showSelectToolButton]=\"showHandToolButton\"></pdf-select-tool>\r\n      <pdf-rotate-page [showRotateButton]=\"showRotateButton\" [clockwise]=\"true\" [counterClockwise]=\"false\">\r\n      </pdf-rotate-page>\r\n      <pdf-rotate-page [showRotateButton]=\"showRotateButton\" [clockwise]=\"false\" [counterClockwise]=\"true\">\r\n      </pdf-rotate-page>\r\n      <pdf-presentation-mode [showPresentationModeButton]=\"showPresentationModeButton\"></pdf-presentation-mode>\r\n      <pdf-open-file [showOpenFileButton]=\"showOpenFileButton\"></pdf-open-file>\r\n      <pdf-print [showPrintButton]=\"showPrintButton\"></pdf-print>\r\n      <pdf-download [showDownloadButton]=\"showDownloadButton\"></pdf-download>\r\n\r\n      <pdf-editor [showEditor]=\"showEditor\"></pdf-editor>\r\n      <pdf-toggle-secondary-toolbar [showSecondaryToolbarButton]=\"showSecondaryToolbarButton\">\r\n      </pdf-toggle-secondary-toolbar>\r\n\r\n    </div>\r\n  </div>\r\n</ng-template>\r\n", styles: [""], components: [{ type: i1.PdfToggleSidebarComponent, selector: "pdf-toggle-sidebar", inputs: ["showSidebarButton"] }, { type: i2.PdfFindButtonComponent, selector: "pdf-find-button", inputs: ["showFindButton", "textLayer"] }, { type: i3.PdfPagingAreaComponent, selector: "pdf-paging-area", inputs: ["showPagingButtons"] }, { type: i4.PdfZoomToolbarComponent, selector: "pdf-zoom-toolbar", inputs: ["showZoomButtons", "zoomLevels"] }, { type: i5.PdfHandToolComponent, selector: "pdf-hand-tool", inputs: ["showHandToolButton"] }, { type: i6.PdfSelectToolComponent, selector: "pdf-select-tool", inputs: ["showSelectToolButton"] }, { type: i7.PdfRotatePageComponent, selector: "pdf-rotate-page", inputs: ["showRotateButton", "clockwise", "counterClockwise"] }, { type: i8.PdfPresentationModeComponent, selector: "pdf-presentation-mode", inputs: ["showPresentationModeButton"] }, { type: i9.PdfOpenFileComponent, selector: "pdf-open-file", inputs: ["showOpenFileButton"] }, { type: i10.PdfPrintComponent, selector: "pdf-print", inputs: ["showPrintButton"] }, { type: i11.PdfDownloadComponent, selector: "pdf-download", inputs: ["showDownloadButton"] }, { type: i12.PdfEditorComponent, selector: "pdf-editor", inputs: ["showEditor"] }, { type: i13.PdfToggleSecondaryToolbarComponent, selector: "pdf-toggle-secondary-toolbar", inputs: ["showSecondaryToolbarButton"] }], directives: [{ type: i14.NgTemplateOutlet, selector: "[ngTemplateOutlet]", inputs: ["ngTemplateOutletContext", "ngTemplateOutlet"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.12", ngImport: i0, type: PdfToolbarComponent, decorators: [{
+            type: Component,
+            args: [{ selector: 'pdf-toolbar', template: "<div class=\"toolbar\" [class.invisible]=\"!primaryMenuVisible\"\r\n  [style.transform]=\"'scale(' + mobileFriendlyZoomScale + ')'\" [style.transformOrigin]=\"'left center'\"\r\n  [style.width]=\"toolbarWidth\" [style.marginTop]=\"toolbarMarginTop\">\r\n  <div id=\"toolbarContainer\">\r\n    <ng-content *ngTemplateOutlet=\"customToolbar ? customToolbar : defaultToolbar\"></ng-content>\r\n    <div id=\"loadingBar\">\r\n      <div class=\"progress\">\r\n        <div class=\"glimmer\"></div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<ng-template #defaultToolbar>\r\n  <div id=\"toolbarViewer\">\r\n    <div id=\"toolbarViewerLeft\">\r\n      <pdf-toggle-sidebar [showSidebarButton]=\"showSidebarButton\"></pdf-toggle-sidebar>\r\n      <pdf-find-button [showFindButton]=\"showFindButton\" [textLayer]=\"textLayer\"></pdf-find-button>\r\n      <pdf-paging-area [showPagingButtons]=\"showPagingButtons\"></pdf-paging-area>\r\n    </div>\r\n    <pdf-zoom-toolbar [showZoomButtons]=\"showZoomButtons\" [zoomLevels]=\"zoomLevels\"></pdf-zoom-toolbar>\r\n    <div id=\"toolbarViewerRight\">\r\n\r\n\r\n      <pdf-hand-tool [showHandToolButton]=\"showHandToolButton\"></pdf-hand-tool>\r\n      <pdf-select-tool [showSelectToolButton]=\"showHandToolButton\"></pdf-select-tool>\r\n      <pdf-rotate-page [showRotateButton]=\"showRotateButton\" [clockwise]=\"true\" [counterClockwise]=\"false\">\r\n      </pdf-rotate-page>\r\n      <pdf-rotate-page [showRotateButton]=\"showRotateButton\" [clockwise]=\"false\" [counterClockwise]=\"true\">\r\n      </pdf-rotate-page>\r\n      <pdf-presentation-mode [showPresentationModeButton]=\"showPresentationModeButton\"></pdf-presentation-mode>\r\n      <pdf-open-file [showOpenFileButton]=\"showOpenFileButton\"></pdf-open-file>\r\n      <pdf-print [showPrintButton]=\"showPrintButton\"></pdf-print>\r\n      <pdf-download [showDownloadButton]=\"showDownloadButton\"></pdf-download>\r\n\r\n      <pdf-editor [showEditor]=\"showEditor\"></pdf-editor>\r\n      <pdf-toggle-secondary-toolbar [showSecondaryToolbarButton]=\"showSecondaryToolbarButton\">\r\n      </pdf-toggle-secondary-toolbar>\r\n\r\n    </div>\r\n  </div>\r\n</ng-template>\r\n", styles: [""] }]
+        }], ctorParameters: function () { return [{ type: i0.ElementRef }]; }, propDecorators: { customToolbar: [{
+                type: Input
+            }], mobileFriendlyZoomScale: [{
+                type: Input
+            }], primaryMenuVisible: [{
+                type: Input
+            }], showBookmarkButton: [{
+                type: Input
+            }], showDownloadButton: [{
+                type: Input
+            }], showEditor: [{
+                type: Input
+            }], showFindButton: [{
+                type: Input
+            }], showHandToolButton: [{
+                type: Input
+            }], showOpenFileButton: [{
+                type: Input
+            }], showPrintButton: [{
+                type: Input
+            }], showPagingButtons: [{
+                type: Input
+            }], showPresentationModeButton: [{
+                type: Input
+            }], showRotateButton: [{
+                type: Input
+            }], showSecondaryToolbarButton: [{
+                type: Input
+            }], showSidebarButton: [{
+                type: Input
+            }], showZoomButtons: [{
+                type: Input
+            }], textLayer: [{
+                type: Input
+            }], toolbarMarginTop: [{
+                type: Input
+            }], toolbarWidth: [{
+                type: Input
+            }], zoomLevels: [{
+                type: Input
+            }], onToolbarLoaded: [{
+                type: Output
+            }] } });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGRmLXRvb2xiYXIuY29tcG9uZW50LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvbmd4LWV4dGVuZGVkLXBkZi12aWV3ZXIvc3JjL2xpYi90b29sYmFyL3BkZi10b29sYmFyL3BkZi10b29sYmFyLmNvbXBvbmVudC50cyIsIi4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL25neC1leHRlbmRlZC1wZGYtdmlld2VyL3NyYy9saWIvdG9vbGJhci9wZGYtdG9vbGJhci9wZGYtdG9vbGJhci5jb21wb25lbnQuaHRtbCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQWlCLFNBQVMsRUFBYyxZQUFZLEVBQUUsS0FBSyxFQUFFLE1BQU0sRUFBZSxNQUFNLGVBQWUsQ0FBQzs7Ozs7Ozs7Ozs7Ozs7OztBQU8vRyxNQUFNLE9BQU8sbUJBQW1CO0lBZ0U5QixZQUFvQixVQUFzQjtRQUF0QixlQUFVLEdBQVYsVUFBVSxDQUFZO1FBM0RuQyw0QkFBdUIsR0FBRyxDQUFDLENBQUM7UUFHNUIsdUJBQWtCLEdBQUcsSUFBSSxDQUFDO1FBRzFCLHVCQUFrQixHQUFHLElBQUksQ0FBQztRQUcxQix1QkFBa0IsR0FBRyxJQUFJLENBQUM7UUFHMUIsZUFBVSxHQUFHLEtBQUssQ0FBQztRQUduQixtQkFBYyxHQUF3QixTQUFTLENBQUM7UUFHaEQsdUJBQWtCLEdBQUcsSUFBSSxDQUFDO1FBRzFCLHVCQUFrQixHQUFHLElBQUksQ0FBQztRQUcxQixvQkFBZSxHQUFHLElBQUksQ0FBQztRQUd2QixzQkFBaUIsR0FBRyxJQUFJLENBQUM7UUFHekIsK0JBQTBCLEdBQUcsS0FBSyxDQUFDO1FBR25DLHFCQUFnQixHQUFHLElBQUksQ0FBQztRQUd4QiwrQkFBMEIsR0FBRyxJQUFJLENBQUM7UUFHbEMsc0JBQWlCLEdBQUcsSUFBSSxDQUFDO1FBR3pCLG9CQUFlLEdBQUcsSUFBSSxDQUFDO1FBR3ZCLGNBQVMsR0FBd0IsU0FBUyxDQUFDO1FBRzNDLHFCQUFnQixHQUFHLEtBQUssQ0FBQztRQUd6QixpQkFBWSxHQUFHLE1BQU0sQ0FBQztRQUd0QixlQUFVLEdBQUcsQ0FBQyxNQUFNLEVBQUUsYUFBYSxFQUFFLFVBQVUsRUFBRSxZQUFZLEVBQUUsR0FBRyxFQUFFLElBQUksRUFBRSxDQUFDLEVBQUUsSUFBSSxFQUFFLEdBQUcsRUFBRSxDQUFDLEVBQUUsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDO1FBR2pHLG9CQUFlLEdBQUcsSUFBSSxZQUFZLEVBQWUsQ0FBQztJQUVaLENBQUM7SUFDOUMsZUFBZTtRQUNiLElBQUksQ0FBQyxlQUFlLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxVQUFVLENBQUMsYUFBYSxDQUFDLHNCQUFzQixDQUFDLFNBQVMsQ0FBQyxDQUFDLENBQUMsQ0FBZ0IsQ0FBQyxDQUFDO0lBQy9HLENBQUM7O2lIQW5FVSxtQkFBbUI7cUdBQW5CLG1CQUFtQiwwM0JDUGhDLG1wRUEwQ0E7NEZEbkNhLG1CQUFtQjtrQkFML0IsU0FBUzsrQkFDRSxhQUFhO2lHQU1oQixhQUFhO3NCQURuQixLQUFLO2dCQUlDLHVCQUF1QjtzQkFEN0IsS0FBSztnQkFJQyxrQkFBa0I7c0JBRHhCLEtBQUs7Z0JBSUMsa0JBQWtCO3NCQUR4QixLQUFLO2dCQUlDLGtCQUFrQjtzQkFEeEIsS0FBSztnQkFJQyxVQUFVO3NCQURoQixLQUFLO2dCQUlDLGNBQWM7c0JBRHBCLEtBQUs7Z0JBSUMsa0JBQWtCO3NCQUR4QixLQUFLO2dCQUlDLGtCQUFrQjtzQkFEeEIsS0FBSztnQkFJQyxlQUFlO3NCQURyQixLQUFLO2dCQUlDLGlCQUFpQjtzQkFEdkIsS0FBSztnQkFJQywwQkFBMEI7c0JBRGhDLEtBQUs7Z0JBSUMsZ0JBQWdCO3NCQUR0QixLQUFLO2dCQUlDLDBCQUEwQjtzQkFEaEMsS0FBSztnQkFJQyxpQkFBaUI7c0JBRHZCLEtBQUs7Z0JBSUMsZUFBZTtzQkFEckIsS0FBSztnQkFJQyxTQUFTO3NCQURmLEtBQUs7Z0JBSUMsZ0JBQWdCO3NCQUR0QixLQUFLO2dCQUlDLFlBQVk7c0JBRGxCLEtBQUs7Z0JBSUMsVUFBVTtzQkFEaEIsS0FBSztnQkFJQyxlQUFlO3NCQURyQixNQUFNIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQWZ0ZXJWaWV3SW5pdCwgQ29tcG9uZW50LCBFbGVtZW50UmVmLCBFdmVudEVtaXR0ZXIsIElucHV0LCBPdXRwdXQsIFRlbXBsYXRlUmVmIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcblxyXG5AQ29tcG9uZW50KHtcclxuICBzZWxlY3RvcjogJ3BkZi10b29sYmFyJyxcclxuICB0ZW1wbGF0ZVVybDogJy4vcGRmLXRvb2xiYXIuY29tcG9uZW50Lmh0bWwnLFxyXG4gIHN0eWxlVXJsczogWycuL3BkZi10b29sYmFyLmNvbXBvbmVudC5jc3MnXSxcclxufSlcclxuZXhwb3J0IGNsYXNzIFBkZlRvb2xiYXJDb21wb25lbnQgaW1wbGVtZW50cyBBZnRlclZpZXdJbml0IHtcclxuICBASW5wdXQoKVxyXG4gIHB1YmxpYyBjdXN0b21Ub29sYmFyOiBUZW1wbGF0ZVJlZjxhbnk+IHwgdW5kZWZpbmVkO1xyXG5cclxuICBASW5wdXQoKVxyXG4gIHB1YmxpYyBtb2JpbGVGcmllbmRseVpvb21TY2FsZSA9IDE7XHJcblxyXG4gIEBJbnB1dCgpXHJcbiAgcHVibGljIHByaW1hcnlNZW51VmlzaWJsZSA9IHRydWU7XHJcblxyXG4gIEBJbnB1dCgpXHJcbiAgcHVibGljIHNob3dCb29rbWFya0J1dHRvbiA9IHRydWU7XHJcblxyXG4gIEBJbnB1dCgpXHJcbiAgcHVibGljIHNob3dEb3dubG9hZEJ1dHRvbiA9IHRydWU7XHJcblxyXG4gIEBJbnB1dCgpXHJcbiAgcHVibGljIHNob3dFZGl0b3IgPSBmYWxzZTtcclxuXHJcbiAgQElucHV0KClcclxuICBwdWJsaWMgc2hvd0ZpbmRCdXR0b246IGJvb2xlYW4gfCB1bmRlZmluZWQgPSB1bmRlZmluZWQ7XHJcblxyXG4gIEBJbnB1dCgpXHJcbiAgcHVibGljIHNob3dIYW5kVG9vbEJ1dHRvbiA9IHRydWU7XHJcblxyXG4gIEBJbnB1dCgpXHJcbiAgcHVibGljIHNob3dPcGVuRmlsZUJ1dHRvbiA9IHRydWU7XHJcblxyXG4gIEBJbnB1dCgpXHJcbiAgcHVibGljIHNob3dQcmludEJ1dHRvbiA9IHRydWU7XHJcblxyXG4gIEBJbnB1dCgpXHJcbiAgcHVibGljIHNob3dQYWdpbmdCdXR0b25zID0gdHJ1ZTtcclxuXHJcbiAgQElucHV0KClcclxuICBwdWJsaWMgc2hvd1ByZXNlbnRhdGlvbk1vZGVCdXR0b24gPSBmYWxzZTtcclxuXHJcbiAgQElucHV0KClcclxuICBwdWJsaWMgc2hvd1JvdGF0ZUJ1dHRvbiA9IHRydWU7XHJcblxyXG4gIEBJbnB1dCgpXHJcbiAgcHVibGljIHNob3dTZWNvbmRhcnlUb29sYmFyQnV0dG9uID0gdHJ1ZTtcclxuXHJcbiAgQElucHV0KClcclxuICBwdWJsaWMgc2hvd1NpZGViYXJCdXR0b24gPSB0cnVlO1xyXG5cclxuICBASW5wdXQoKVxyXG4gIHB1YmxpYyBzaG93Wm9vbUJ1dHRvbnMgPSB0cnVlO1xyXG5cclxuICBASW5wdXQoKVxyXG4gIHB1YmxpYyB0ZXh0TGF5ZXI6IGJvb2xlYW4gfCB1bmRlZmluZWQgPSB1bmRlZmluZWQ7XHJcblxyXG4gIEBJbnB1dCgpXHJcbiAgcHVibGljIHRvb2xiYXJNYXJnaW5Ub3AgPSAnMHB4JztcclxuXHJcbiAgQElucHV0KClcclxuICBwdWJsaWMgdG9vbGJhcldpZHRoID0gJzEwMCUnO1xyXG5cclxuICBASW5wdXQoKVxyXG4gIHB1YmxpYyB6b29tTGV2ZWxzID0gWydhdXRvJywgJ3BhZ2UtYWN0dWFsJywgJ3BhZ2UtZml0JywgJ3BhZ2Utd2lkdGgnLCAwLjUsIDAuNzUsIDEsIDEuMjUsIDEuNSwgMiwgMywgNF07XHJcblxyXG4gIEBPdXRwdXQoKVxyXG4gIHB1YmxpYyBvblRvb2xiYXJMb2FkZWQgPSBuZXcgRXZlbnRFbWl0dGVyPEhUTUxFbGVtZW50PigpO1xyXG5cclxuICBjb25zdHJ1Y3Rvcihwcml2YXRlIGVsZW1lbnRSZWY6IEVsZW1lbnRSZWYpIHt9XHJcbiAgbmdBZnRlclZpZXdJbml0KCk6IHZvaWQge1xyXG4gICAgdGhpcy5vblRvb2xiYXJMb2FkZWQuZW1pdCh0aGlzLmVsZW1lbnRSZWYubmF0aXZlRWxlbWVudC5nZXRFbGVtZW50c0J5Q2xhc3NOYW1lKCd0b29sYmFyJylbMF0gYXMgSFRNTEVsZW1lbnQpO1xyXG4gIH1cclxufVxyXG4iLCI8ZGl2IGNsYXNzPVwidG9vbGJhclwiIFtjbGFzcy5pbnZpc2libGVdPVwiIXByaW1hcnlNZW51VmlzaWJsZVwiXHJcbiAgW3N0eWxlLnRyYW5zZm9ybV09XCInc2NhbGUoJyArIG1vYmlsZUZyaWVuZGx5Wm9vbVNjYWxlICsgJyknXCIgW3N0eWxlLnRyYW5zZm9ybU9yaWdpbl09XCInbGVmdCBjZW50ZXInXCJcclxuICBbc3R5bGUud2lkdGhdPVwidG9vbGJhcldpZHRoXCIgW3N0eWxlLm1hcmdpblRvcF09XCJ0b29sYmFyTWFyZ2luVG9wXCI+XHJcbiAgPGRpdiBpZD1cInRvb2xiYXJDb250YWluZXJcIj5cclxuICAgIDxuZy1jb250ZW50ICpuZ1RlbXBsYXRlT3V0bGV0PVwiY3VzdG9tVG9vbGJhciA/IGN1c3RvbVRvb2xiYXIgOiBkZWZhdWx0VG9vbGJhclwiPjwvbmctY29udGVudD5cclxuICAgIDxkaXYgaWQ9XCJsb2FkaW5nQmFyXCI+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJwcm9ncmVzc1wiPlxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJnbGltbWVyXCI+PC9kaXY+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgPC9kaXY+XHJcbjwvZGl2PlxyXG5cclxuPG5nLXRlbXBsYXRlICNkZWZhdWx0VG9vbGJhcj5cclxuICA8ZGl2IGlkPVwidG9vbGJhclZpZXdlclwiPlxyXG4gICAgPGRpdiBpZD1cInRvb2xiYXJWaWV3ZXJMZWZ0XCI+XHJcbiAgICAgIDxwZGYtdG9nZ2xlLXNpZGViYXIgW3Nob3dTaWRlYmFyQnV0dG9uXT1cInNob3dTaWRlYmFyQnV0dG9uXCI+PC9wZGYtdG9nZ2xlLXNpZGViYXI+XHJcbiAgICAgIDxwZGYtZmluZC1idXR0b24gW3Nob3dGaW5kQnV0dG9uXT1cInNob3dGaW5kQnV0dG9uXCIgW3RleHRMYXllcl09XCJ0ZXh0TGF5ZXJcIj48L3BkZi1maW5kLWJ1dHRvbj5cclxuICAgICAgPHBkZi1wYWdpbmctYXJlYSBbc2hvd1BhZ2luZ0J1dHRvbnNdPVwic2hvd1BhZ2luZ0J1dHRvbnNcIj48L3BkZi1wYWdpbmctYXJlYT5cclxuICAgIDwvZGl2PlxyXG4gICAgPHBkZi16b29tLXRvb2xiYXIgW3Nob3dab29tQnV0dG9uc109XCJzaG93Wm9vbUJ1dHRvbnNcIiBbem9vbUxldmVsc109XCJ6b29tTGV2ZWxzXCI+PC9wZGYtem9vbS10b29sYmFyPlxyXG4gICAgPGRpdiBpZD1cInRvb2xiYXJWaWV3ZXJSaWdodFwiPlxyXG5cclxuXHJcbiAgICAgIDxwZGYtaGFuZC10b29sIFtzaG93SGFuZFRvb2xCdXR0b25dPVwic2hvd0hhbmRUb29sQnV0dG9uXCI+PC9wZGYtaGFuZC10b29sPlxyXG4gICAgICA8cGRmLXNlbGVjdC10b29sIFtzaG93U2VsZWN0VG9vbEJ1dHRvbl09XCJzaG93SGFuZFRvb2xCdXR0b25cIj48L3BkZi1zZWxlY3QtdG9vbD5cclxuICAgICAgPHBkZi1yb3RhdGUtcGFnZSBbc2hvd1JvdGF0ZUJ1dHRvbl09XCJzaG93Um90YXRlQnV0dG9uXCIgW2Nsb2Nrd2lzZV09XCJ0cnVlXCIgW2NvdW50ZXJDbG9ja3dpc2VdPVwiZmFsc2VcIj5cclxuICAgICAgPC9wZGYtcm90YXRlLXBhZ2U+XHJcbiAgICAgIDxwZGYtcm90YXRlLXBhZ2UgW3Nob3dSb3RhdGVCdXR0b25dPVwic2hvd1JvdGF0ZUJ1dHRvblwiIFtjbG9ja3dpc2VdPVwiZmFsc2VcIiBbY291bnRlckNsb2Nrd2lzZV09XCJ0cnVlXCI+XHJcbiAgICAgIDwvcGRmLXJvdGF0ZS1wYWdlPlxyXG4gICAgICA8cGRmLXByZXNlbnRhdGlvbi1tb2RlIFtzaG93UHJlc2VudGF0aW9uTW9kZUJ1dHRvbl09XCJzaG93UHJlc2VudGF0aW9uTW9kZUJ1dHRvblwiPjwvcGRmLXByZXNlbnRhdGlvbi1tb2RlPlxyXG4gICAgICA8cGRmLW9wZW4tZmlsZSBbc2hvd09wZW5GaWxlQnV0dG9uXT1cInNob3dPcGVuRmlsZUJ1dHRvblwiPjwvcGRmLW9wZW4tZmlsZT5cclxuICAgICAgPHBkZi1wcmludCBbc2hvd1ByaW50QnV0dG9uXT1cInNob3dQcmludEJ1dHRvblwiPjwvcGRmLXByaW50PlxyXG4gICAgICA8cGRmLWRvd25sb2FkIFtzaG93RG93bmxvYWRCdXR0b25dPVwic2hvd0Rvd25sb2FkQnV0dG9uXCI+PC9wZGYtZG93bmxvYWQ+XHJcblxyXG4gICAgICA8cGRmLWVkaXRvciBbc2hvd0VkaXRvcl09XCJzaG93RWRpdG9yXCI+PC9wZGYtZWRpdG9yPlxyXG4gICAgICA8cGRmLXRvZ2dsZS1zZWNvbmRhcnktdG9vbGJhciBbc2hvd1NlY29uZGFyeVRvb2xiYXJCdXR0b25dPVwic2hvd1NlY29uZGFyeVRvb2xiYXJCdXR0b25cIj5cclxuICAgICAgPC9wZGYtdG9nZ2xlLXNlY29uZGFyeS10b29sYmFyPlxyXG5cclxuICAgIDwvZGl2PlxyXG4gIDwvZGl2PlxyXG48L25nLXRlbXBsYXRlPlxyXG4iXX0=

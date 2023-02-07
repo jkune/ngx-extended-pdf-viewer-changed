@@ -9,7 +9,7 @@ export declare let pdfDefaultOptions: {
     defaultZoomDelay: number;
     cursorToolOnLoad: number;
     defaultUrl: string;
-    defaultZoomValue: undefined;
+    defaultZoomValue: any;
     disableHistory: boolean;
     disablePageLabels: boolean;
     enablePermissions: boolean;
@@ -50,7 +50,7 @@ export declare let pdfDefaultOptions: {
     pdfBug: boolean;
     postMessageTransfers: boolean;
     verbosity: number;
-    workerPort: null;
+    workerPort: any;
     assetsFolder: string;
     sandboxBundleSrc: () => string;
     workerSrc: () => string;
@@ -61,6 +61,6 @@ export declare let pdfDefaultOptions: {
     doubleTapResetsZoomOnSecondDoubleTap: boolean;
     enableScripting: boolean;
     defaultCacheSize: number;
-    passwordPrompt: undefined;
+    passwordPrompt: any;
     locale: string;
 };
