@@ -10,10 +10,6 @@
   "ng-add": {
     "save": "dependencies"
   },
-  "scripts": {
-    "build": "tsc -p tsconfig.schematics.json",
-    "postbuild": "copyfiles schematics/collection.json schematics/*/schema.json schematics/*/files/**/**/* ../../dist/ngx-extended-pdf-viewer/"
-  },
   "author": {
     "name": "Stephan Rauh",
     "url": "https://www.beyondjava.net"
@@ -36,10 +32,30 @@
     "@angular/core": ">=12.0.0 <16.0.0"
   },
   "dependencies": {
-    "lodash.deburr": "^4.1.0"
+    "lodash.deburr": "^4.1.0",
+    "tslib": "^2.3.0"
   },
-  "devDependencies": {
-    "copyfiles": "file:../../node_modules/copyfiles",
-    "typescript": "file:../../node_modules/typescript"
+  "module": "fesm2015/ngx-extended-pdf-viewer.mjs",
+  "es2020": "fesm2020/ngx-extended-pdf-viewer.mjs",
+  "esm2020": "esm2020/ngx-extended-pdf-viewer.mjs",
+  "fesm2020": "fesm2020/ngx-extended-pdf-viewer.mjs",
+  "fesm2015": "fesm2015/ngx-extended-pdf-viewer.mjs",
+  "typings": "ngx-extended-pdf-viewer.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./ngx-extended-pdf-viewer.d.ts",
+      "esm2020": "./esm2020/ngx-extended-pdf-viewer.mjs",
+      "es2020": "./fesm2020/ngx-extended-pdf-viewer.mjs",
+      "es2015": "./fesm2015/ngx-extended-pdf-viewer.mjs",
+      "node": "./fesm2015/ngx-extended-pdf-viewer.mjs",
+      "default": "./fesm2020/ngx-extended-pdf-viewer.mjs"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
   }
 }

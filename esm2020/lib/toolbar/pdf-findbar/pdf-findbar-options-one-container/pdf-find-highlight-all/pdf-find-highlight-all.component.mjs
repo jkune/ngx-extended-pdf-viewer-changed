@@ -1,0 +1,16 @@
+import { Component } from '@angular/core';
+import * as i0 from "@angular/core";
+export class PdfFindHighlightAllComponent {
+}
+/** @nocollapse */ PdfFindHighlightAllComponent.ɵfac = function PdfFindHighlightAllComponent_Factory(t) { return new (t || PdfFindHighlightAllComponent)(); };
+/** @nocollapse */ PdfFindHighlightAllComponent.ɵcmp = /** @pureOrBreakMyCode */ i0.ɵɵdefineComponent({ type: PdfFindHighlightAllComponent, selectors: [["pdf-find-highlight-all"]], decls: 3, vars: 0, consts: [["type", "checkbox", "id", "findHighlightAll", 1, "toolbarField"], ["for", "findHighlightAll", "data-l10n-id", "find_highlight", 1, "toolbarLabel"]], template: function PdfFindHighlightAllComponent_Template(rf, ctx) { if (rf & 1) {
+        i0.ɵɵelement(0, "input", 0);
+        i0.ɵɵelementStart(1, "label", 1);
+        i0.ɵɵtext(2, " Highlight all\n");
+        i0.ɵɵelementEnd();
+    } }, styles: [""] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(PdfFindHighlightAllComponent, [{
+        type: Component,
+        args: [{ selector: 'pdf-find-highlight-all', template: "<input\r\n  type=\"checkbox\"\r\n  id=\"findHighlightAll\"\r\n  class=\"toolbarField\"\r\n/>\r\n<label\r\n  for=\"findHighlightAll\"\r\n  class=\"toolbarLabel\"\r\n  data-l10n-id=\"find_highlight\">\r\n  Highlight all\r\n</label>\r\n", styles: [""] }]
+    }], null, null); })();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGRmLWZpbmQtaGlnaGxpZ2h0LWFsbC5jb21wb25lbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi8uLi8uLi9wcm9qZWN0cy9uZ3gtZXh0ZW5kZWQtcGRmLXZpZXdlci9zcmMvbGliL3Rvb2xiYXIvcGRmLWZpbmRiYXIvcGRmLWZpbmRiYXItb3B0aW9ucy1vbmUtY29udGFpbmVyL3BkZi1maW5kLWhpZ2hsaWdodC1hbGwvcGRmLWZpbmQtaGlnaGxpZ2h0LWFsbC5jb21wb25lbnQudHMiLCIuLi8uLi8uLi8uLi8uLi8uLi8uLi8uLi9wcm9qZWN0cy9uZ3gtZXh0ZW5kZWQtcGRmLXZpZXdlci9zcmMvbGliL3Rvb2xiYXIvcGRmLWZpbmRiYXIvcGRmLWZpbmRiYXItb3B0aW9ucy1vbmUtY29udGFpbmVyL3BkZi1maW5kLWhpZ2hsaWdodC1hbGwvcGRmLWZpbmQtaGlnaGxpZ2h0LWFsbC5jb21wb25lbnQuaHRtbCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsU0FBUyxFQUFFLE1BQU0sZUFBZSxDQUFDOztBQU8xQyxNQUFNLE9BQU8sNEJBQTRCOzsySEFBNUIsNEJBQTRCOzhHQUE1Qiw0QkFBNEI7UUNQekMsMkJBSUU7UUFDRixnQ0FHZ0M7UUFDOUIsZ0NBQ0Y7UUFBQSxpQkFBUTs7dUZESEssNEJBQTRCO2NBTHhDLFNBQVM7MkJBQ0Usd0JBQXdCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tcG9uZW50IH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcblxyXG5AQ29tcG9uZW50KHtcclxuICBzZWxlY3RvcjogJ3BkZi1maW5kLWhpZ2hsaWdodC1hbGwnLFxyXG4gIHRlbXBsYXRlVXJsOiAnLi9wZGYtZmluZC1oaWdobGlnaHQtYWxsLmNvbXBvbmVudC5odG1sJyxcclxuICBzdHlsZVVybHM6IFsnLi9wZGYtZmluZC1oaWdobGlnaHQtYWxsLmNvbXBvbmVudC5jc3MnXSxcclxufSlcclxuZXhwb3J0IGNsYXNzIFBkZkZpbmRIaWdobGlnaHRBbGxDb21wb25lbnQge31cclxuIiwiPGlucHV0XHJcbiAgdHlwZT1cImNoZWNrYm94XCJcclxuICBpZD1cImZpbmRIaWdobGlnaHRBbGxcIlxyXG4gIGNsYXNzPVwidG9vbGJhckZpZWxkXCJcclxuLz5cclxuPGxhYmVsXHJcbiAgZm9yPVwiZmluZEhpZ2hsaWdodEFsbFwiXHJcbiAgY2xhc3M9XCJ0b29sYmFyTGFiZWxcIlxyXG4gIGRhdGEtbDEwbi1pZD1cImZpbmRfaGlnaGxpZ2h0XCI+XHJcbiAgSGlnaGxpZ2h0IGFsbFxyXG48L2xhYmVsPlxyXG4iXX0=

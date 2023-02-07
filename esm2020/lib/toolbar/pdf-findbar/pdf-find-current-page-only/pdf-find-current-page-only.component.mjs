@@ -1,0 +1,16 @@
+import { Component } from '@angular/core';
+import * as i0 from "@angular/core";
+export class PdfFindCurrentPageOnlyComponent {
+}
+/** @nocollapse */ PdfFindCurrentPageOnlyComponent.ɵfac = function PdfFindCurrentPageOnlyComponent_Factory(t) { return new (t || PdfFindCurrentPageOnlyComponent)(); };
+/** @nocollapse */ PdfFindCurrentPageOnlyComponent.ɵcmp = /** @pureOrBreakMyCode */ i0.ɵɵdefineComponent({ type: PdfFindCurrentPageOnlyComponent, selectors: [["pdf-find-current-page-only"]], decls: 3, vars: 0, consts: [["type", "checkbox", "id", "findCurrentPage", 1, "toolbarField"], ["for", "findCurrentPage", "data-l10n-id", "find_current_page", 1, "toolbarLabel"]], template: function PdfFindCurrentPageOnlyComponent_Template(rf, ctx) { if (rf & 1) {
+        i0.ɵɵelement(0, "input", 0);
+        i0.ɵɵelementStart(1, "label", 1);
+        i0.ɵɵtext(2, " Current page only\n");
+        i0.ɵɵelementEnd();
+    } }, styles: ["#findRange[_ngcontent-%COMP%]{margin-right:14px}"] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(PdfFindCurrentPageOnlyComponent, [{
+        type: Component,
+        args: [{ selector: 'pdf-find-current-page-only', template: "<input\r\n  type=\"checkbox\"\r\n  id=\"findCurrentPage\"\r\n  class=\"toolbarField\"\r\n/>\r\n<label\r\n  for=\"findCurrentPage\"\r\n  class=\"toolbarLabel\"\r\n  data-l10n-id=\"find_current_page\">\r\n  Current page only\r\n</label>\r\n", styles: ["#findRange{margin-right:14px}\n"] }]
+    }], null, null); })();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGRmLWZpbmQtY3VycmVudC1wYWdlLW9ubHkuY29tcG9uZW50LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvbmd4LWV4dGVuZGVkLXBkZi12aWV3ZXIvc3JjL2xpYi90b29sYmFyL3BkZi1maW5kYmFyL3BkZi1maW5kLWN1cnJlbnQtcGFnZS1vbmx5L3BkZi1maW5kLWN1cnJlbnQtcGFnZS1vbmx5LmNvbXBvbmVudC50cyIsIi4uLy4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL25neC1leHRlbmRlZC1wZGYtdmlld2VyL3NyYy9saWIvdG9vbGJhci9wZGYtZmluZGJhci9wZGYtZmluZC1jdXJyZW50LXBhZ2Utb25seS9wZGYtZmluZC1jdXJyZW50LXBhZ2Utb25seS5jb21wb25lbnQuaHRtbCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsU0FBUyxFQUFFLE1BQU0sZUFBZSxDQUFDOztBQU8xQyxNQUFNLE9BQU8sK0JBQStCOztpSUFBL0IsK0JBQStCO2lIQUEvQiwrQkFBK0I7UUNQNUMsMkJBSUU7UUFDRixnQ0FHbUM7UUFDakMsb0NBQ0Y7UUFBQSxpQkFBUTs7dUZESEssK0JBQStCO2NBTDNDLFNBQVM7MkJBQ0UsNEJBQTRCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tcG9uZW50IH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcblxyXG5AQ29tcG9uZW50KHtcclxuICBzZWxlY3RvcjogJ3BkZi1maW5kLWN1cnJlbnQtcGFnZS1vbmx5JyxcclxuICB0ZW1wbGF0ZVVybDogJy4vcGRmLWZpbmQtY3VycmVudC1wYWdlLW9ubHkuY29tcG9uZW50Lmh0bWwnLFxyXG4gIHN0eWxlVXJsczogWycuL3BkZi1maW5kLWN1cnJlbnQtcGFnZS1vbmx5LmNvbXBvbmVudC5jc3MnXSxcclxufSlcclxuZXhwb3J0IGNsYXNzIFBkZkZpbmRDdXJyZW50UGFnZU9ubHlDb21wb25lbnQge31cclxuIiwiPGlucHV0XHJcbiAgdHlwZT1cImNoZWNrYm94XCJcclxuICBpZD1cImZpbmRDdXJyZW50UGFnZVwiXHJcbiAgY2xhc3M9XCJ0b29sYmFyRmllbGRcIlxyXG4vPlxyXG48bGFiZWxcclxuICBmb3I9XCJmaW5kQ3VycmVudFBhZ2VcIlxyXG4gIGNsYXNzPVwidG9vbGJhckxhYmVsXCJcclxuICBkYXRhLWwxMG4taWQ9XCJmaW5kX2N1cnJlbnRfcGFnZVwiPlxyXG4gIEN1cnJlbnQgcGFnZSBvbmx5XHJcbjwvbGFiZWw+XHJcbiJdfQ==
